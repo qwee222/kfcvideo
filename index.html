@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<title>KFC Regalos - Mobile Responsive</title>
+ <title>juegos didcretos</title>
+ <meta content="https://i.postimg.cc/.png" property="og:image">
+<script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "patron", "1ca", "ffffffffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
 <meta charset="utf-8">
 <meta http-equiv="X-A-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,55 +13,177 @@
 <link rel="shortcut icon" href="data:image/x-icon">
 <link href="css/app1.css?id=2fbe2d9a9a40ca9b2489" type="text/css" rel="stylesheet" />
 <style>
+
 /* Estilos esenciales */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
 * { margin: 0; padding: 0; font-family: Poppins; box-sizing: border-box; text-align:center; }
+
 html, body { font-size: 16px; width: 100%; height: 100%; }
+
 /* Ajuste para móvil: forzar que el contenido ocupe todo el ancho */
+
 .app {
+
    display: block; /* Desactivar flexbox para layout de columna */
+
    max-width: 400px; /* Limitar el ancho máximo si es necesario */
+
    margin: 0 auto;
+
    padding: 0 10px;
+
 }
+
 .left, .right { /* Asegurar que las columnas eliminadas no afecten el layout */
+
    margin: 0;
+
    max-width: 100%;
+
    width: 100%;
+
 }
+
 #step_one, #step_two, #step_three { display: none; }
+
 #step_one { display: block; }
+
 .prize-content {
+
    background:#eaeaea;
+
    color:#000;
+
    padding:30px 20px;
+
    text-align: center;
+
    border-radius: 10px;
+
    margin-top: 10px;
+
 }
+
 .prize-title { text-align: center; font-weight: 700; font-size: 26px }
+
 .prize-text { padding: 5px 6px; line-height: 18px; color: #BE0612; text-align: center }
+
 .done { text-align: center; color: #c7db49; }
+
 .rules { color: #1b316c; padding: 4px 5px; line-height: 22px }
+
 .share_main_bt {
+
    margin: 20px auto 10px;
+
    background:#E4002B;
+
    border-radius: 10px;
+
    width: 80%;
+
    line-height: 45px;
+
    text-align: center;
+
    font-size: 18px;
+
    font-weight: bold;
+
    color: #fff  !important;
+
    cursor: pointer;
+
    padding: 0 10px;
+
    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
 }
+
 /* Encabezado fijo y general */
+
 .top-header-img {
+
    width: 100%;
+
    display: block;
+
    margin-bottom: 10px;
+
+}
+
+/* Estilo para el nuevo video */
+
+.prize-video {
+
+    width: 81%; /* Ajustar al mismo ancho que la imagen original */
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px; /* Opcional: para que se vea más integrado */
+
+}
+
+/* NUEVOS ESTILOS PARA EL TEXTO FLOTANTE */
+
+.video-container {
+
+    position: relative; /* Contenedor para que el texto flotante se posicione respecto a él */
+
+    width: 81%;
+
+    margin: 10px auto;
+
+}
+
+.video-container .prize-video {
+
+    width: 100%; /* El video ocupa el 100% del contenedor */
+
+    display: block; /* Asegura que no haya espacios debajo del video */
+
+}
+
+.floating-text {
+
+    position: absolute;
+
+    bottom: 0; /* Posicionar en la parte inferior del video */
+
+    left: 0;
+
+    right: 0;
+
+    color: #BE0612; /* Color rojo del texto original */
+
+    /* Fondo más transparente y con borde redondeado */
+
+    background: rgba(255, 255, 255, 0.5); 
+
+    padding: 5px 6px;
+
+    line-height: 18px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-bottom-left-radius: 10px;
+
+    border-bottom-right-radius: 10px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    /* Efecto de borde (outline) blanco en la letra para mejor legibilidad */
+
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+
 }
 </style>
 </head>
@@ -68,23 +192,32 @@ html, body { font-size: 16px; width: 100%; height: 100%; }
 <div id="step_one" class="app">
 <div class="prize-content">
 <div class="prize-title"><p>¡Pregunta 1!</p></div>
-<div style="text-align: center; margin: 10px 0;">
-<img src="https://i.pinimg.com/736x/46/86/80/46868089bb712b54bdbbe0af88db4307.jpg" width='81%' alt="Premio "/>
+<div class="video-container">
+<video class="prize-video" autoplay loop muted playsinline poster="https://i.imgur.com/V84k9Ba.mp4">
+<source src="https://i.imgur.com/V84k9Ba.mp4" type="video/mp4">
+
+        Tu navegador no soporta el tag de video.
+</video>
+<p class="floating-text">Somos un Grupo de Madres solteras entre 30 y 50 años en busca relaciones, no me importa la edad.</p>
 </div>
-<p class="prize-text">Somos un Grupo de Madres solteras entre 30 y 50 años en busca relaciones, no me importa la edad.</p>
-<p class="rules">Estás a 1 paso de conseguir tu regalo de mi parte, Si eres mayor de Edad pulse Continuar.</p>
+<p class="rules">Estás a dos pasos de conseguir tu regalo de mi parte, Si eres mayor de Edad pulse Continuar.</p>
 <div class="share_main_bt" onclick="goToStep(2)">Continuar</div>
 </div>
 </div>
 <div id="step_two" class="app">
 <div class="prize-content" style="background: none; padding-top: 0; padding-bottom: 10px;">
 <div class="prize-title" style="padding-top: 20px;"><p>¡En Hora buena!</p></div>
-<div style="text-align: center; margin: 20px 0;">
-<img src="https://i.pinimg.com/736x/46/86/80/46868089bb712b54bdbbe0af88db4307.jpg" width='81%' alt="Premio"/>
+<div class="video-container" style="margin-bottom: 20px;">
+<video class="prize-video" autoplay loop muted playsinline poster="https://i.imgur.com/V84k9Ba.mp4">
+<source src="https://i.imgur.com/V84k9Ba.mp4" type="video/mp4">
+
+        Tu navegador no soporta el tag de video.
+</video>
+<p class="floating-text">Nota: ¿Estás de acuerdo en respetar a las mujeres y relaciones que ves abajo? Si conoces a alguien, por favor, no lo digas y no difundas rumores.</p>
 </div>
-<p class="txt1">Nota: ¿Estás de acuerdo en respetar a las mujeres y relaciones que ves abajo? Si conoces a alguien, por favor, no lo digas y no difundas rumores.</p>
 <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-<p class="rules">¡Completa el proceso final Registrandote para recibir tu Regalito con las Chicas!</p>
+<p class="rules">Consigue tu Regalo ya mismo.</p>
+<p class="rules">¡Completa el proceso final Registrandote para recibir tu premio!</p>
 <br>
 <div class="share_main_bt" id="offers">Acepto</div>
 <br>
@@ -92,83 +225,47 @@ html, body { font-size: 16px; width: 100%; height: 100%; }
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+
    // URL final a Google
-   var googleRedirect = "https://shrlc.com/yjQSylU";
+
+   var googleRedirect = "https://www.google.com";
+
    /**
+
     * Función para navegar entre los pasos.
+
     * @param {number} step El número del paso al que se quiere ir (2 o 3).
+
     */
+
    function goToStep(step) {
+
        // Ocultar todos los contenedores de pasos
+
        $("#step_one, #step_two, #step_three").fadeOut(0);
+
        if (step === 2) {
+
            $("#step_two").fadeIn(500);
+
        } else if (step === 3) {
+
            $("#step_three").fadeIn(500);
+
        }
+
    }
+
    // Evento del botón final para redirigir a Google
+
    $("#offers").click(function () {
+
        window.open(googleRedirect, "_self"); // Redirige en la misma pestaña
+
    });
 </script>
 <img src="https://i.imgur.com/vaisBVZ.jpeg" style="width:100%; margin-top: 10px;" alt="Footer Image" />
 <script>
 </body>
 </html>
-    document.addEventListener('DOMContentLoaded', () => {
-
-        // --- Funciones de Rotación ---
-
-        function getCurrentNumber() {
-
-            // Obtiene la parte después de '?' y la convierte a número (o 0 si no existe)
-
-            const currentParam = window.location.search.substring(1);
-
-            const currentNumber = parseInt(currentParam) || 0;
-
-            return currentNumber;
-
-        }
-
-        function getNextRotatedNumber(currentNum) {
-
-            let nextNum = currentNum + 1;
-
-            // Asegura que el número esté entre 1 y 9999
-
-            if (nextNum > 9999 || nextNum === 0) {
-
-                nextNum = 1;
-
-            }
-
-            return nextNum;
-
-        }
-
-        // --- Ejecución ---
-
-        const currentNumber = getCurrentNumber();
-
-        const nextNumber = getNextRotatedNumber(currentNumber);
-
-        // Construye la nueva URL (ej: /index.html?123)
-
-        const newUrl = window.location.pathname + '?' + nextNumber;
-
-        // CLAVE: Solo cambia la URL si es diferente.
-
-        // Usa history.replaceState() para modificar la URL mostrada SIN recargar.
-
-        if (window.location.search !== '?' + nextNumber) {
-
-            window.history.replaceState(null, null, newUrl);
-
-        }
-
-    });
-</script>
-</body>
-</html>
+ 

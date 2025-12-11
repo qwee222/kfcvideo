@@ -3,9 +3,6 @@
 <head>
 <title>KFC Regalos - Mobile Responsive</title>
 <meta charset="utf-8">
-<title>Discreet encounter, photo shoot</title>
-<meta content='https://i.postimg.cc/zBWGjGcb/Vista-Uno-Sepia.png' property='og:image'/>
-<script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "bichin77", "1ca", "ffffffffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
 <meta http-equiv="X-A-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website" />
@@ -128,21 +125,79 @@ html, body { font-size: 16px; width: 100%; height: 100%; }
     border-radius: 10px; /* Opcional: para que se vea más integrado */
 
 }
+
+/* NUEVOS ESTILOS PARA EL TEXTO FLOTANTE */
+
+.video-container {
+
+    position: relative; /* Contenedor para que el texto flotante se posicione respecto a él */
+
+    width: 81%;
+
+    margin: 10px auto;
+
+}
+
+.video-container .prize-video {
+
+    width: 100%; /* El video ocupa el 100% del contenedor */
+
+    display: block; /* Asegura que no haya espacios debajo del video */
+
+}
+
+.floating-text {
+
+    position: absolute;
+
+    bottom: 0; /* Posicionar en la parte inferior del video */
+
+    left: 0;
+
+    right: 0;
+
+    color: #BE0612; /* Color rojo del texto original */
+
+    /* Fondo más transparente y con borde redondeado */
+
+    background: rgba(255, 255, 255, 0.5); 
+
+    padding: 5px 6px;
+
+    line-height: 18px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    border-bottom-left-radius: 10px;
+
+    border-bottom-right-radius: 10px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    /* Efecto de borde (outline) blanco en la letra para mejor legibilidad */
+
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+
+}
 </style>
 </head>
 <body>
 <img src='https://i.imgur.com/SgeAdZ2.png' class="top-header-img" alt=" Header Image" />
 <div id="step_one" class="app">
 <div class="prize-content">
-<div class="prize-title"><p>¡Advertencia!</p></div>
-<div style="text-align: center; margin: 10px 0;">
+<div class="prize-title"><p>¡Pregunta 1!</p></div>
+<div class="video-container">
 <video class="prize-video" autoplay loop muted playsinline poster="https://i.imgur.com/V84k9Ba.mp4">
 <source src="https://i.imgur.com/V84k9Ba.mp4" type="video/mp4">
 
-    Tu navegador no soporta el tag de video.
+        Tu navegador no soporta el tag de video.
 </video>
+<p class="floating-text">Somos un Grupo de Madres solteras entre 30 y 50 años en busca relaciones, no me importa la edad.</p>
 </div>
-<p class="prize-text">Somos un Grupo de Madres solteras entre 30 y 50 años en busca relaciones, no me importa la edad.</p>
 <p class="rules">Estás a dos pasos de conseguir tu regalo de mi parte, Si eres mayor de Edad pulse Continuar.</p>
 <div class="share_main_bt" onclick="goToStep(2)">Continuar</div>
 </div>
@@ -150,14 +205,14 @@ html, body { font-size: 16px; width: 100%; height: 100%; }
 <div id="step_two" class="app">
 <div class="prize-content" style="background: none; padding-top: 0; padding-bottom: 10px;">
 <div class="prize-title" style="padding-top: 20px;"><p>¡En Hora buena!</p></div>
-<div style="text-align: center; margin: 20px 0;">
+<div class="video-container" style="margin-bottom: 20px;">
 <video class="prize-video" autoplay loop muted playsinline poster="https://i.imgur.com/V84k9Ba.mp4">
 <source src="https://i.imgur.com/V84k9Ba.mp4" type="video/mp4">
 
-    Tu navegador no soporta el tag de video.
+        Tu navegador no soporta el tag de video.
 </video>
+<p class="floating-text">Nota: ¿Estás de acuerdo en respetar a las mujeres y relaciones que ves abajo? Si conoces a alguien, por favor, no lo digas y no difundas rumores.</p>
 </div>
-<p class="txt1">Nota: ¿Estás de acuerdo en respetar a las mujeres y relaciones que ves abajo? Si conoces a alguien, por favor, no lo digas y no difundas rumores.</p>
 <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
 <p class="rules">Consigue tu Regalo ya mismo.</p>
 <p class="rules">¡Completa el proceso final Registrandote para recibir tu premio!</p>
@@ -209,63 +264,6 @@ html, body { font-size: 16px; width: 100%; height: 100%; }
 </script>
 <img src="https://i.imgur.com/vaisBVZ.jpeg" style="width:100%; margin-top: 10px;" alt="Footer Image" />
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-        // --- Funciones de Rotación ---
-
-        function getCurrentNumber() {
-
-            // Obtiene la parte después de '?' y la convierte a número (o 0 si no existe)
-
-            const currentParam = window.location.search.substring(1);
-
-            const currentNumber = parseInt(currentParam) || 0;
-
-            return currentNumber;
-
-        }
-
-        function getNextRotatedNumber(currentNum) {
-
-            let nextNum = currentNum + 1;
-
-            // Asegura que el número esté entre 1 y 9999
-
-            if (nextNum > 9999 || nextNum === 0) {
-
-                nextNum = 1;
-
-            }
-
-            return nextNum;
-
-        }
-
-        // --- Ejecución ---
-
-        const currentNumber = getCurrentNumber();
-
-        const nextNumber = getNextRotatedNumber(currentNumber);
-
-        // Construye la nueva URL (ej: /index.html?123)
-
-        const newUrl = window.location.pathname + '?' + nextNumber;
-
-        // CLAVE: Solo cambia la URL si es diferente.
-
-        // Usa history.replaceState() para modificar la URL mostrada SIN recargar.
-
-        if (window.location.search !== '?' + nextNumber) {
-
-            window.history.replaceState(null, null, newUrl);
-
-        }
-
-    });
-</script>
 </body>
 </html>
-</body>
-</html>
-
  
